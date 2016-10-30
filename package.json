@@ -13,14 +13,8 @@
     "assets/*.css",
     "lib"
   ],
-  "homepage": "http://github.com/react-component/select",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:react-component/select.git"
-  },
-  "bugs": {
-    "url": "http://github.com/react-component/select/issues"
-  },
+  "repository": "https://github.com/conqa/rc-select.git",
+  "private": "true",
   "licenses": "MIT",
   "config": {
     "port": 8003
