@@ -334,6 +334,10 @@ const Select = React.createClass({
           }
         }
       } else if (isMultipleOrTags(props) && inputValue) {
+        props.onSelect({
+          key: inputValue,
+          label: inputValue,
+        });
         this.state.inputValue = this.getInputDOMNode().value = '';
       }
       props.onBlur(this.getVLForOnChange(value));
