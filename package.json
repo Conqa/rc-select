@@ -20,17 +20,15 @@
     "port": 8003
   },
   "scripts": {
-    "build": "rc-tools run build",
-    "gh-pages": "rc-tools run gh-pages",
     "start": "rc-tools run server",
-    "pub": "rc-tools run pub --babel-runtime",
     "lint": "rc-tools run lint",
     "karma": "rc-tools run karma",
     "saucelabs": "rc-tools run saucelabs",
     "test": "rc-tools run test",
     "prepublish": "rc-tools run guard",
     "chrome-test": "rc-tools run chrome-test",
-    "coverage": "rc-tools run coverage"
+    "coverage": "rc-tools run coverage",
+    "build": "echo 'Compiling...\n' && rm -rf ./lib && timeout 10 ./node_modules/rc-tools/bin/rc-tools.js run watch || true"
   },
   "devDependencies": {
     "expect.js": "~0.3.1",
